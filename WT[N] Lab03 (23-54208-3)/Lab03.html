@@ -1,0 +1,85 @@
+<!DOCTYPE html
+<html>
+<head>
+    <title>Student Information System</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Information System</h1>
+
+    <hr>
+
+    <h2>Student Information</h2>
+
+    <form id="studentForm">
+
+        <div>
+			<label for="name">Student Name:</label>
+			<input type="text" id="name" required>
+        </div><br><br>
+		<div>
+			<label for="dob">Date of birth:</label>
+			<input type="date" id="dob" required>
+        </div><br><br>
+
+        <div>
+			<label for="age">Age:</label>
+			<input type="number" id="age" required>
+        </div><br><br>
+		<div>
+			<label for="email">	Email:</label>
+			<input type="email" id="email" required>
+        </div><br><br>
+
+        <div>
+			<label for="cgpa">CGPA:</label>
+			<input type="number" id="cgpa" required>
+        </div><br><br>
+		
+		<div>
+			<label for = "interest">Area of Interest:</label>
+			<input type = "checkbox" name = "interest" value = "r&d">R&D
+			<input type = "checkbox" name = "interest" value = "cp">CP
+		</div><br><br>
+
+        <div>
+			<label for="status">Student Status:</label>
+			<select id="status">
+				<option value="Active">Active</option>
+				<option value="Inactive">Inactive</option>
+			</select>
+        </div><br><br>
+
+        <div>
+			<label for="grade">Grade:</label>
+			<input type="text" id="grade" required>
+        </div><br><br>
+		<div>
+			<label for="reli">Religion:</label>
+			<input type="radio", name="reli", value="Islam">Islam
+			<input type="radio", name="reli", value="Hindu">Hindu
+        </div><br><br>
+		
+		<div>
+			<input type="submit" value="Register">
+			<input type="reset" value="Clear">
+		</div><br>
+
+    </form>
+
+    <h2>Student Information Output</h2>
+    <p id="studentOutput"></p>
+
+    <hr>
+
+    <h2>Course List</h2>
+
+    <ul align="center", id="courseList">
+        <li>Web Technology</li>
+        <li>OOP</li>
+        <li>Database</li>
+    </ul>
+
+</body>
+</html>
